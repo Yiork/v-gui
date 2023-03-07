@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Average+Sans&display=swap");
+
+:root {
+  --kale: #03363d;
+  --paleKale: #024751;
+  --nessie: #bdd9d7;
+  --oatMilk: #ece1cf;
+  --karl: #f4efec;
+  --tofu: #f8f9f9;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  font-family: "Average Sans", sans-serif;
+}
+
+.v-box {
+  background: white;
+  width: 700px;
+  height: 100%;
+  top: 0;
+  right: -700px;
+  z-index: 9;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.v-box > header {
+  height: 12rem;
+  padding: 0 15px;
+  display: flex;
+  border-bottom: 7px solid var(--kale);
+  background: var(--paleKale);
+  align-items: center;
+}
+
+.v-box > header > form > h1 {
+  color: var(--karl);
+}
+
+.v-box > header > form > h4 {
+  color: var(--nessie);
+}
+
+.v-box > header > form > label > input {
+  width: 500px;
+  height: 30px;
+}
+
+.v-box > main {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  overflow: auto;
+}
+
+.v-box > main > h3 {
+  color: var(--kale);
+}
+
+.v-box > main > .v-box-doc {
+  border-left: 2px solid var(--kale);
+  margin-left: 1rem;
+  padding-left: 1rem;
+}
