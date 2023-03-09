@@ -21,10 +21,10 @@ html {
 
 .v-box {
   background: white;
-  width: 700px;
+  width: 30%;
   height: 100%;
   top: 0;
-  right: -700px;
+  right: -30%;
   z-index: 9;
   position: absolute;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
@@ -52,8 +52,14 @@ html {
 }
 
 .v-box > header > form > label > input {
-  width: 500px;
+  width: 20rem;
   height: 30px;
+  border: 2px solid white;
+}
+
+
+.v-box > header > form > label {
+  display: contents;
 }
 
 .v-box > main {
@@ -72,4 +78,42 @@ html {
   border-left: 2px solid var(--kale);
   margin-left: 1rem;
   padding-left: 1rem;
+}
+
+.v-btn{
+  z-index: 100;
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  padding: 1em 3em;
+  background: var(--paleKale);
+  color: #fff;
+  border: 0;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  font-family: sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  cursor: hand;
+  transition: all .3s ease;
+}
+.v-box-btn{
+  padding: 1em 3em;
+    background: white;
+    color: var(--paleKale);
+    border: 0;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    font-family: sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s ease;
 }
